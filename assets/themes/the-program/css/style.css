@@ -556,6 +556,10 @@ html {
 .body .unit-body {
   background-color: #fafafa;
 }
+.floatingImage {
+  float: left;
+  margin-right: 3ch;
+}
 /* LINK */
 a:link {
   color: #2d2d2d;
@@ -727,7 +731,6 @@ pre {
 }
 .unit-article img {
   display: block;
-  margin-left: auto;
   margin-left: auto;
 }
 .unit-article img.left {
