@@ -1,0 +1,449 @@
+<!doctype html>
+<html lang="pl">
+
+<head>
+    <meta charset="utf-8">
+
+    <title>Zwinność w praktyce</title>
+
+    <meta name="description" content="Zwinne metodologie prowadzenia projektów: trochę teorii, i trochę praktyki">
+    <meta name="author" content="Jarek Potiuk">
+
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+    <link rel="stylesheet" href="css/reveal.min.css">
+    <link rel="stylesheet" href="css/theme/nicefonts.css" id="theme">
+
+    <!-- For syntax highlighting -->
+    <link rel="stylesheet" href="lib/css/zenburn.css">
+
+    <!-- If the query includes 'print-pdf', use the PDF print sheet -->
+    <script>
+        document.write( '<link rel="stylesheet" href="css/print/' + ( window.location.search.match( /print-pdf/gi ) ? 'pdf' : 'paper' ) + '.css" type="text/css" media="print">' );
+    </script>
+
+    <!--[if lt IE 9]>
+    <script src="lib/js/html5shiv.js"></script>
+    <![endif]-->
+
+    <!-- For syntax highlighting -->
+    <link rel="stylesheet" href="css/images.css">
+</head>
+
+<body>
+
+<div class="reveal">
+
+<!-- Any section element inside of this container is displayed as a slide -->
+<div class="slides">
+
+<section>
+    <h1>Zwinność w praktyce</h1>
+    <br/>
+    Oparta na solidnej teorii
+    <br/>
+    <br/>
+    <p>
+        <small><a href="http://software-gardener.com">Jarek Potiuk</a> / <a href="http://twitter.com/higrys">@higrys</a></small>
+    </p>
+    <img src="images/polidea_logo_podstawowe.png" width="30%" />
+</section>
+
+<section>
+    <section>
+        <h2>Kontekst i agenda</h2>
+        O czym i dlaczego będę mówił?
+    </section>
+    <section>
+        <h2>Obecnie</h2>
+        <ul>
+            <li class="fragment">CTO w firmie <a href="http://www.polidea.pl">Polidea</a>
+                <ul>
+                    <li>Na rynku od 4 lat</li>
+                    <li>Aplikacje mobilne i pochodne</li>
+                    <li>35+ osób</li>
+                    <li>Praktycznie sami inżynierowie</li>
+                </ul>
+            </li>
+            <li class="fragment">Współzałożyciel <a href="http://www.szlif.edu.pl">Akademii Inżyniera "Szlif"</a></li>
+            <li class="fragment">Współzałożyciel <a href="http://www.mobile-warsaw.pl">Mobile Warsaw</a></li>
+        </ul>
+    </section>
+    <section>
+        <h2>Doświadczenia i przekonania</h2>
+        <ul>
+            <li class="fragment">W przeszłości:
+                <ul>
+                    <li>CTO w firmie <a href="http://www.skycash.pl">SkyCash</a></li>
+                    <li>Tech Lead/Manager w <a href="http://www.google.com">Google</a></li>
+                    <li>Programista/Architect/HoT w firmie <a href="http://www.computaris.com">Computaris</a></li>
+                    <li>Programista w firmie <a href="http://www.pg.com">Procter & Gamble</a></li>
+                </ul>
+            </li>
+            <li class="fragment">Osobiście
+                <ul>
+                    <li>Inżynier, Entuzjasta technologii, Geek</li>
+                    <li>Z pojęciem o biznesie</li>
+                    <li>Menedżer - kiedy trzeba</li>
+                    <li>Chórzysta od 23 lat - chór <a href="http://arscantata.pl">Ars Cantata</a></li>
+                </ul>
+            </li>
+           </ul>
+    </section>
+    <section>
+        <h2>Agenda</h2>
+        <ul>
+            <li>Projekty "tradycyjne"</li>
+            <li>Projekty zwinne</li>
+            <li>Zwinne tworzenie oprogramowania</li>
+            <li>Zwinne metody w praktyce</li>
+            <li>Nowinki i ciekawostki</li>
+        </ul>
+    </section>
+
+</section>
+
+<section>
+    <section>
+        <h2>Projekty "tradycyjne"</h2>
+        <p>
+            Skąd się wzięło tradycyjne podejście do projektów?
+        </p>
+    </section>
+    <section>
+        <h2>Budowanie mostów</h2>
+        <img src="images/san_francisco_bridge.png" alt="Most">
+    </section>
+    <section>
+        <h2>Inżynieria tradycyjna</h2>
+        <ul>
+            <li class="fragment">Doświadczenie tysięcy lat</li>
+            <li class="fragment">"Duży projekt" zanim zaczniemy</li>
+            <li class="fragment">Podział na fazy: projekt, konstrukcja, utrzymanie</li>
+            <li class="fragment">Trudno zmienić raz podjęte decyzje</li>
+            <li class="fragment">Materiały konstrukcyjne</li>
+            <li class="fragment">Stabilne wymagania</li>
+            <li class="fragment">Powtarzalność rezultatów</li>
+        </ul>
+    </section>
+    <section>
+        <h2>W trakcie budowy</h2>
+        <img src="images/bridge_under_construction.png" alt="Most w trakcie budowy">
+    </section>
+    <section>
+        <h2>Projekt tradycyjny</h2>
+        <img src="images/traditional_project.png" alt="Projekt tradycyjny">
+    </section>
+    <section>
+        <h2>Model wodospadu (eng. Waterfall)</h2>
+        <img src="images/waterfall.png" alt="Waterfall">
+    </section>
+    <section>
+        <h2>Gantt</h2>
+        <img src="images/gantt.png" alt="Gantt">
+    </section>
+    <section>
+        <h2>UML</h2>
+        <img src="images/uml.png" alt="UML">
+    </section>
+    <section>
+        <h2>Linia montażowa</h2>
+        <img src="images/assembly_line.png" alt="UML">
+    </section>
+</section>
+
+<section>
+    <section>
+        <h2>Projekty zwinne</h2>
+        <p>
+            Dlaczego tworzenie oprogramowania, to z reguły trochę inna bajka?
+        </p>
+    </section>
+    <section>
+        <h2>Inżynieria oprogramowania</h2>
+        <ul>
+            <li class="fragment">Krótka tradycja - dziesiąt lat</li>
+            <li class="fragment">Wiele metod osiągnięcia tego samego celu</li>
+            <li class="fragment">Oprogramowanie można łatwiej wyrzucić</li>
+            <li class="fragment">Etap "konstrukcji" wymagający wysiłku intelektualnego</li>
+            <li class="fragment">Ciągle zmieniające się wymagania</li>
+            <li class="fragment">Projekt nie ma końca</li>
+        </ul>
+    </section>
+    <section>
+        <h2>Działanie elektrowni jądrowej</h2>
+        <img src="images/nuclear-power-plant.jpg"></img>
+    </section>
+    <section>
+        <h2>Teoria kontroli procesów</h2>
+        <ul>
+            <li class="fragment">Nie pasuje do modelu "zdefiniowanego"</li>
+            <li class="fragment">Model "empiryczny"
+            <li class="fragment">Złożony, nie do końca zrozumiały proces</li>
+            <li class="fragment">Oczekuj nieoczekiwanego</li>
+            <li class="fragment">Rezultaty nie do końca powtarzalne</li>
+            <li class="fragment">Kontrola przez częste sprawdzanie i reakcję</li>                    
+        </ul>
+    </section>
+    <section>
+        <h2>Cykle w tworzeniu oprogramowania</h2>
+        <img src="images/cycles.png"></img>
+    </section>
+    <section>
+        <h2>Specyfika (?) aplikacji mobilnych</h2>
+        <ul>
+            <li class="fragment">Projektów nie da się do końca określić</li>
+            <li class="fragment">Małe zmiany -> duży nakład pracy</li>
+            <li class="fragment">Ciągłe poprawki (bezpośrednia interakcja)</li>
+            <li class="fragment">Poprawki wydajnościowe</li>
+            <li class="fragment">Zmiany w projekcie wynikające z ograniczeń</li>
+            <li class="fragment">Częste wyrzucanie/dodawanie funkcjonalności</li>
+            <li class="fragment">Bardzo szybkie zmiany środowiska</li>
+        </ul>
+    </section>
+    <section>
+        <h2>Dwa lata rozwoju</h2>
+        <img class="img_left_top" src="images/market_2011.png" >
+        <img class="img_right_top" src="images/play_2013.png" />
+    </section>
+</section>
+
+<section>
+    <section>
+        <h2>Zwinne tworzenie oprogramowania</h2>
+        O co w tej zwinności chodzi?
+    </section>
+    <section>
+        <h2>Budowniczy czy ogrodnik?</h2>
+        <img class="img_left_top" src="images/bridge_under_construction.png" >
+        <img class="img_right_bottom" src="images/gardening.png" />
+    </section>
+    <section>
+        <h2>Manifest Zwinnego Tworzenia Oprogramowania</h2>
+        <img src="images/agile_manifesto.png"/>
+    </section>
+    <section>
+        <h2>Zwinne praktyki</h2>
+        <ul>
+            <li class="fragment">Samo-oganizujące się zespoły</li>
+            <li class="fragment">Zespoły z mocą podejmowania decyzji</li>
+            <li class="fragment">Częste dostarczanie działających funkcjonalności</li>
+            <li class="fragment">Przytulanie zmian</li>
+            <li class="fragment">Czas przeznaczony na rozwój i naukę</li>
+            <li class="fragment">Szczera komunikacja</li>
+            <li class="fragment">(Automatyczne) Testowanie wszystkiego</li>
+            <li class="fragment">Przecieranie szlaków</li>
+            <li class="fragment">Minimalizacja strat (eng. waste)</li>
+            <li class="fragment">Ciągłe dopasowywanie sposobu pracy</li>
+            <li class="fragment">Zwinne != Szybsze</li>
+        </ul>
+    </section>
+    <section>
+        <h2>Manifest Mistrzów Oprogramowania</h2>
+        <img src="images/software_craftsmanship_manifesto.png"/>
+    </section>
+    <section>
+        <h2>Istniejące metody</h2>
+        <ul>
+            <li class="fragment">SCRUM
+                <ul>
+                    <li>Iteracje o wyznaczonym czasie trwania</li>
+                    <li>Zakres ustalany na początku iteracji</li>
+                    <li>Codzienne spotkania SCRUM (15 min.)</li>
+                    <li>"User stories": abstrakcyjny rozmiar (1,2,3,5,8 ..)</li>
+                    <li>Przewidywalność "szybkości zespołu" (ang. velocity)</li>
+                </ul>
+            </li>
+            <li class="fragment">Kanban
+                <ul>
+                    <li>Bez iteracji</li>
+                    <li>Minimalizacja liczby zadań "w toku"</li>
+                    <li>Ciągłe dostarczanie</li>
+                </ul>
+            </li>
+        </ul>
+    </section>
+    <section>
+        <h2>Standaryzacja i "przepisy"</h2>
+        <ul>
+            <li class="fragment">Dogmatyzm jest niewskazany</li>
+            <li class="fragment">"Przepisy" przydatne na początku</li>
+            <li class="fragment">Nie ma jednego "agile"</li>
+            <li class="fragment">Zmiana jako podstawowa cecha systemów</li>
+            <li class="fragment">Certyfikaty są niepotrzebne/szkodliwe</li>
+            <li class="fragment">Ciągły rozwój i nauka</li>
+            <li class="fragment">Planowanie jest niezbędne, ale plany są bezwartościowe</li>
+            <li class="fragment">Ludzie są najważniejsi</li>
+       </ul>
+    </section>
+</section>
+
+<section>
+    <section>
+        <h2>Zwinne metody w praktyce</h2>  
+        Jak to się sprawdza w praktyce?
+    </section>
+
+    <section>
+        <h2>Stan obecny</h2>
+        <ul>
+            <li class="fragment">Łatwiej jeśli chodzi o produkt</li>
+            <li class="fragment">Ale w pracy z klientem ????</li>
+            <li class="fragment">Jaki kontrakt? "Fixed"/"T&M" ???</li>
+            <li class="fragment">Jakie estymaty?</li>
+            <li class="fragment">Estymwanie jest niezbędne ale estymaty są bezwartościowe</li>            
+        </ul>
+    </section>
+    <section>
+        <h2>Praca u podstaw</h2>
+        <ul>
+            <li class="fragment">Do dziś trudno w Polsce</li>
+            <li class="fragment">USA i Europa Zachodnia - już tam są</li>
+            <li class="fragment">Budowanie ogólnej świadomości</li>
+            <li class="fragment">Zadawanie dużej liczby pytań (RFP/RFQ)</li>
+            <li class="fragment">Edukowanie klienta w trakcie prac</li>
+            <li class="fragment">Podział projektu na mniejsze części</li>
+            <li class="fragment">Opóźnianie estymat (i ograniczanie do pierwszych faz)</li>
+            <li class="fragment">Time boxing</li>
+            <li class="fragment">Budowanie zaufania</li>
+            <li class="fragment">Dobór naturalny :)</li>
+        </ul>
+    </section>
+    <section>
+        <h2>Przykład 1</h2>
+        Duża międzynarodowa korporacja biotechnologiczna
+        <br/><br/>
+        <ul>
+            <li class="fragment">Pierwszy projekt "fixed price"</li>
+            <li class="fragment">Ale nie "fixed scope"</li>
+            <li class="fragment">Metoda "+1"</li>
+            <li class="fragment">Mechanizm zmian (change request) ustawiony i komunikowany od początku</li>
+            <li class="fragment">Ciągłe namawianie do "T&M"</li>
+            <li class="fragment">Po kilku miesiącach, projekty 2,3,... : T&M</li>
+        </ul>
+    </section>
+    <section>
+        <h2>Przykład 2</h2>
+        Gra dla startup-u w San Francisco
+        <br/><br/>
+        <ul>
+            <li class="fragment">Próba ustalenia "fixed scope"</li>
+            <li class="fragment">Rozłożenie na czynniki pierwsze</li>
+            <li class="fragment">Zadawanie mnóstwa pytań</li>
+            <li class="fragment">Ograniczenie estymat do udzielonych odpowiedzi</li>
+            <li class="fragment">Alternatywy: Fixed + CR vs. T&M</li>
+            <li class="fragment">Rezultat: Projekt T&M</li>
+        </ul>
+    </section>
+    <section>
+        <h2>Przykład 3</h2>
+        Nieduży partner z Francji
+        <br/><br/>
+        <ul>
+            <li class="fragment">Ustalenie zasad T&M</li>
+            <li class="fragment">Mały pierwszy projekt z założonymi estymatami (ale T&M)</li>
+            <li class="fragment">Fragment: małe ryzyko/duże doświadczenie</li>
+            <li class="fragment">Rezultat: po małym projekcie, współpraca T&M</li>
+        </ul>
+    </section>    
+</section>
+
+<section>
+    <section>
+        <h2>Nowinki i ciekawostki</h2>
+        Co nas czeka wkrótce?
+    </section>
+    <section>
+        <h2>Prostszy "SCRUM"</h2>
+        <ul>
+            <li class="fragment">"Story points": abstrakcyjne, nielogiczne</li>
+            <li class="fragment">Porównanie "story points" vs. liczba "stories"</li>
+            <li class="fragment">Uproszczony Fibonacci: 1, zbyt duży</li>
+            <li class="fragment">Dzielenie "stories" na mniejsze</li>
+        </ul>
+    </section>    
+    <section>
+        <h2>"Time Boxing" a budżety</h2>
+        <ul>
+            <li class="fragment">Departamenty w korporacjach: stałe budżety</li>
+            <li class="fragment">Limit pieniędzy -> limit zakresu i pieniędzy</li>                   
+            <li class="fragment">Metody zwinne: ciągłe dostarczanie wartości</li>
+            <li class="fragment">Co roku miliony są topione w długich, skasowanych projektach</li>
+            <li class="fragment">Manipulujmy zakresem a nie czasem</li>
+        </ul>
+    </section>
+    <section>
+        <h2>Ruch #noestimates</h2>    
+        <ul>
+            <li class="fragment">Estymaty są piekielnie trudne - często niemożliwe</li>
+            <li class="fragment">Estymaty robią najwartościowsi ludzie</li>
+            <li class="fragment">Estymaty z reguły nic nie dają</li>
+            <li class="fragment">Estymaty mogą być potrzebne do kluczowych decyzji</li>
+            <li class="fragment">Zrezygnujmy z estymat</li>
+            <li class="fragment">"It's ready when it's ready"</li>
+        </ul>            
+    </section>
+</section>
+<section>
+    <section>
+        <h2>Zakończenie</h2>
+        Co chciałbym żebyście wynieśli?
+    </section>
+    <section>
+        <h2>W skrócie</h2>
+        <ul>
+            <li class="fragment">Projekty z oprogramowaniem, nie są "tradycyjne"</li>
+            <li class="fragment">Ciągła obserwacja i reakcje są kluczowe</li>
+            <li class="fragment">Najważniejsi są ludzie</li>
+            <li class="fragment">Zwinne praktyki a nie "przepisy"</li>
+            <li class="fragment">Ciągła zmiana jest niezbędna</li>
+            <li class="fragment">To działa już dziś</li>
+            <li class="fragment">A dzięki wam - jutro może działać jeszcze lepiej</li>
+        </ul>
+    </section>
+    <section>
+        <h2>Q&A</h2>
+    </section>    
+</section>
+
+</div>
+
+</div>
+
+<script src="lib/js/head.min.js"></script>
+<script src="js/reveal.min.js"></script>
+
+<script>
+
+    // Full list of configuration options available here:
+    // https://github.com/hakimel/reveal.js#configuration
+    Reveal.initialize({
+        controls: true,
+        progress: true,
+        history: true,
+        center: true,
+        mouseWheel: true,
+
+        theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
+        transition: Reveal.getQueryHash().transition || 'default', // default/cube/page/concave/zoom/linear/fade/none
+
+        // Optional libraries used to extend on reveal.js
+        dependencies: [
+            { src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+            { src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+            { src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+            { src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+            { src: 'plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
+            { src: 'plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }
+            //{ src: 'plugin/search/search.js', async: true, condition: function() { return !!document.body.classList; } }
+            //{ src: 'plugin/remotes/remotes.js', async: true, condition: function() { return !!document.body.classList; } }
+        ]
+    });
+
+</script>
+
+</body>
+</html>
