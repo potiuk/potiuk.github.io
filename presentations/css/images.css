@@ -4,7 +4,7 @@
     position: relative;
     z-index: 1;
     left: -30%;
-    height: 70%;
+    width: 50%;
 }
 
 .img_right_bottom
@@ -14,7 +14,7 @@
     z-index: 2;
     top: 30%;
     left: 50%;
-    height: 70%;
+    height: 50%;
 }
 
 .img_right_top
@@ -23,7 +23,7 @@
     position: absolute;
     z-index: 2;
     left: 50%;
-    height: 70%;
+    height: 50%;
 }
 
 .img_center
