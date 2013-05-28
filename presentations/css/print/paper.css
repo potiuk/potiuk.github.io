@@ -9,7 +9,7 @@
 /* SECTION 1: Set default width, margin, float, and
    background. This prevents elements from extending
    beyond the edge of the printed page, and prevents
-   unnecessary background images from printing */
+   unnecessary background images_zwinne from printing */
 body {
 	background: #fff;
 	font-size: 13pt;

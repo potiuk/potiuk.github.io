@@ -91,7 +91,7 @@ module.exports = function(grunt) {
 				'css/**',
 				'js/**',
 				'lib/**',
-				'images/**',
+				'images_zwinne/**',
 				'plugin/**'
 			]
 		},
