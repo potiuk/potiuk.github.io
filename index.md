@@ -7,9 +7,10 @@ tagline: Do it right. And do the right things.
 
 # About me
 
-I <img alt =" [Jarek Potiuk] " src="{{BASE_PATH}}/images/JP.jpg" width="131" height="138" class="floatingImage"/> am a software engineer 
-and it's deeply rooted in my internal fabric.  
-Even though after many years of workign in the industry, and playing various roles, software engineering is the base 
+<img alt =" [Jarek Potiuk] " src="{{BASE_PATH}}/images/JP.jpg" width="131" height="138" class="floatingImage"/> 
+I am a software engineer 
+and it's deeply rooted in my internal fabric. Even after many years of working in the industry, and playing various 
+roles - software engineering is the base 
 and pretty often most of what I am doing in those roles. I am currently CTO and Partner of 
 [Polidea](http://www.polidea.pl), but big part of my tasks are software engineering tasks. Software engineering in 
 the modern and pretty wide sense of it. It's not only coding (though that's the essence of it and I know I will 

@@ -10,3 +10,4 @@ Thumbs.db
 .rvmrc
 presentations/.sass-cache
 *.log
+.sass-cache
