@@ -14,8 +14,10 @@
 
 // Include theme-specific fonts
 // Caching (below) locally the google Noto web fonts for local presentations
-//    @import url(http://fonts.googleapis.com/css?family=Noto+Serif:400,700,400italic,700italic);
 
+@import url(http://fonts.googleapis.com/css?family=Noto+Serif:400,700,400italic,700italic);
+
+/*
 @font-face {
   font-family: 'Noto Serif';
   font-style: normal;
@@ -40,6 +42,7 @@
   font-weight: 700;
   src: local('Noto Serif Bold Italic'), local('NotoSerif-BoldItalic'), url(../../fonts/notoserif/v1/Wreg0Be4tcFGM2t6VWytvBAPw1J91axKNXP_-QX9CC8.woff) format('woff');
 }
+*/
 
 
 // Override theme settings (see ../template/settings.scss)
