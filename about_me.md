@@ -1,7 +1,7 @@
 ---
 layout: page
-title: About me
-header: About me
+title: About
+header: About
 description: navigation
 group: navigation
 ---

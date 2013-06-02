@@ -1,12 +1,9 @@
 /* This is for your Custom Content. */
-
 .floatingImage {
   float: right;
   margin: 0 0 10px 10px;
   border: 1px solid #666;
-  padding: 2px;
-}
+  padding: 2px; }
 
 .terms-of-use {
-  text-align: center;
-}
+  text-align: center; }
