@@ -33,5 +33,9 @@ organization.
 Currently I am focusing on mobile software development - including connected devices as the most recent trend. Except
 of being CTO in [Polidea](http://www.polidea.pl), I am also co founder of [Diamond Polishing](http://www.szlif.edu.pl) 
 Academy of Engineering and [Mobile Warsaw](http://mobile-warsaw.pl) initiative. I am happy to help in building the
-community of professionals in Warsaw, Poland and beyond. Occassionally I [present]({{BASE_PATH}}/presentations.html) at conferences or meetups.
+community of professionals in Warsaw, Poland and beyond. 
+Occassionally I [present]({{BASE_PATH}}/presentations.html) at conferences or meetups.
+
+See also my answer in Quora for the question: [Do people loose interest in programming as they age](http://qr.ae/pMxmv)
+that reflects pretty well my views on programming in general.
 
