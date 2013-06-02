@@ -57,6 +57,13 @@
             </ul>
             <ul class="nav pull-right social visible-desktop">
               <li class="divider-vertical"></li>
+                {% if site.author.stackoverflow %}
+                <li>
+                    <a href="http://stackoverflow.com/users/{{ site.author.stackoverflow }}" class="zocial stackoverflow icon" target="_blank">
+                        <span class="hidden-desktop">Stackoverflow</span>
+                    </a>
+                </li>
+                {% endif %}
               {% if site.author.github %}
                 <li>
                   <a href="https://github.com/{{ site.author.github }}" class="zocial github icon" target="_blank">
