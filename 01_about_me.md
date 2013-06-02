@@ -4,6 +4,7 @@ title: About
 header: About
 description: navigation
 group: navigation
+permalink: about_me.html
 ---
 
 <img alt =" [Jarek Potiuk] " src="{{BASE_PATH}}/images/JP.jpg" width="131" height="138" class="floatingImage"/> 
